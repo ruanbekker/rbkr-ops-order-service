@@ -3,7 +3,7 @@ package repository
 import (
 	"database/sql"
 
-	"github.com/ruanbekker/rbkr-order-processing-system-microservices/internal/model"
+	"github.com/ruanbekker/rbkr-ops-order-service/internal/model"
 )
 
 type OrderRepository struct {

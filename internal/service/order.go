@@ -4,9 +4,9 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/ruanbekker/rbkr-order-processing-system-microservices/internal/model"
-	"github.com/ruanbekker/rbkr-order-processing-system-microservices/internal/repository"
-	"github.com/ruanbekker/rbkr-order-processing-system-microservices/internal/kafka"
+	"github.com/ruanbekker/rbkr-ops-order-service/internal/model"
+	"github.com/ruanbekker/rbkr-ops-order-service/internal/repository"
+	"github.com/ruanbekker/rbkr-ops-order-service/internal/kafka"
 )
 
 type OrderService struct {

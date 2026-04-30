@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/ruanbekker/rbkr-order-processing-system-microservices/internal/service"
+	"github.com/ruanbekker/rbkr-ops-order-service/internal/service"
 )
 
 type OrderHandler struct {

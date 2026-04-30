@@ -3,12 +3,12 @@ package main
 import (
     "github.com/gin-gonic/gin"
 
-    "github.com/ruanbekker/rbkr-order-processing-system-microservices/internal/db/postgres"
-    "github.com/ruanbekker/rbkr-order-processing-system-microservices/internal/handler"
-    "github.com/ruanbekker/rbkr-order-processing-system-microservices/internal/kafka"
-    "github.com/ruanbekker/rbkr-order-processing-system-microservices/internal/repository"
-    "github.com/ruanbekker/rbkr-order-processing-system-microservices/internal/service"
-    "github.com/ruanbekker/rbkr-order-processing-system-microservices/pkg/config"
+    "github.com/ruanbekker/rbkr-ops-order-service/internal/db/postgres"
+    "github.com/ruanbekker/rbkr-ops-order-service/internal/handler"
+    "github.com/ruanbekker/rbkr-ops-order-service/internal/kafka"
+    "github.com/ruanbekker/rbkr-ops-order-service/internal/repository"
+    "github.com/ruanbekker/rbkr-ops-order-service/internal/service"
+    "github.com/ruanbekker/rbkr-ops-order-service/pkg/config"
 )
 
 func main() {
