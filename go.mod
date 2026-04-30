@@ -1,4 +1,4 @@
-module github.com/ruanbekker/rbkr-order-processing-system-microservices
+module github.com/ruanbekker/rbkr-ops-order-service
 
 go 1.25.9
 
