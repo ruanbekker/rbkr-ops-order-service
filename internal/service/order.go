@@ -35,7 +35,6 @@ func (s *OrderService) CreateOrder(productID string, quantity int) (*model.Order
 		return nil, err
 	}
 
-	// increment prometheus metric
 	metrics.OrdersCreated.Inc()
 
 	_ = s.producer.Publish("order_created", map[string]interface{}{
