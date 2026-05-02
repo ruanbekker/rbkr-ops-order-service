@@ -7,6 +7,7 @@ import (
 	"github.com/ruanbekker/rbkr-ops-order-service/internal/model"
 	"github.com/ruanbekker/rbkr-ops-order-service/internal/repository"
 	"github.com/ruanbekker/rbkr-ops-order-service/internal/kafka"
+	"github.com/ruanbekker/rbkr-ops-order-service/internal/metrics"
 )
 
 type OrderService struct {
@@ -33,6 +34,9 @@ func (s *OrderService) CreateOrder(productID string, quantity int) (*model.Order
 	if err := s.repo.Create(order); err != nil {
 		return nil, err
 	}
+
+	// increment prometheus metric
+	metrics.OrdersCreated.Inc()
 
 	_ = s.producer.Publish("order_created", map[string]interface{}{
 		"order_id":   order.ID,
